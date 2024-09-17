@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://jigs:yssa1@cluster0.9vpud.mongodb.net/todolist?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://jigs:<password>@cluster0.9vpud.mongodb.net/todolist?retryWrites=true&w=majority&appName=Cluster0')
 
 app.get('/get', (req,res) => {
     TodoModel.find()
